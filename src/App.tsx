@@ -2,6 +2,9 @@ import Header from './components/home/Header'
 import Hero from './components/home/Hero'
 import Courses from './components/home/Courses'
 import About from './components/home/About'
+import WhyChooseUs from './components/home/WhyChooseUs'
+import OurTeachers from './components/home/OurTeachers'
+import Footer from './components/home/Footer'
 import ScrollToTop from './components/ScrollToTop'
 import ScrollToDown from './components/ScrollToDown'
 
@@ -15,6 +18,9 @@ const App = () => {
       <Hero />
       <Courses />
       <About />
+      <WhyChooseUs />
+      <OurTeachers />
+      <Footer />
     </div>
     </>
   )

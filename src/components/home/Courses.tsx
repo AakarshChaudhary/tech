@@ -1,4 +1,5 @@
 import { BadgeCheck, Clock3, Star } from "lucide-react";
+import SectionBadge from '../ui/SectionBadge'
 
 const courseItems = [
   {
@@ -44,10 +45,8 @@ const Courses = () => {
     <section id="courses" className="bg-[#f4f5f8] py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="mx-auto mb-10 max-w-3xl text-center">
-          <p className="mb-3 inline-block rounded-full bg-gradient-to-r from-violet-500 to-sky-500 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-white shadow-xl shadow-violet-200/50">
-            Top popular courses
-          </p>
-          <h2 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
+          <SectionBadge>Top popular courses</SectionBadge>
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
             Consolidated Courses
           </h2>
           <p className="mt-4 text-base leading-7 text-slate-600">
