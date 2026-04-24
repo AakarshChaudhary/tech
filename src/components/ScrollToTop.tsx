@@ -45,9 +45,9 @@ const ScrollToTop = () => {
           whileTap={{ scale: 0.9 }}
           onClick={handleClick}
           aria-label="Scroll to top"
-          className="fixed bottom-6 right-6 z-50 inline-flex items-center justify-center w-12 h-12 bg-slate-900 text-white rounded-full shadow-lg hover:bg-slate-800"
+          className="fixed bottom-4 right-4 z-50 inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 text-white shadow-lg hover:bg-slate-800 sm:bottom-6 sm:right-6 sm:h-12 sm:w-12"
         >
-          <ArrowUp size={24} />
+          <ArrowUp className="h-5 w-5 sm:h-6 sm:w-6" />
         </motion.button>
       )}
     </AnimatePresence>

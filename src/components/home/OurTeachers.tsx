@@ -34,7 +34,7 @@ const OurTeachers = () => {
         <div className='mt-10 grid gap-6 md:grid-cols-3'>
           {teacherItems.map((teacher) => (
             <article key={teacher.name} className='overflow-hidden rounded-2xl bg-white shadow-sm'>
-              <img src={teacher.image} alt={teacher.name} className='h-64 w-full object-cover' loading='lazy' />
+              <img src={teacher.image} alt={teacher.name} className='h-56 w-full object-cover sm:h-64' loading='lazy' />
               <div className='p-5'>
                 <h3 className='text-xl font-semibold text-slate-900'>{teacher.name}</h3>
                 <p className='mt-1 text-slate-600'>{teacher.role}</p>

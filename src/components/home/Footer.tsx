@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="border-t border-slate-200 bg-[#f5f5f5] pt-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="grid gap-8 md:grid-cols-[1.2fr_1fr_1fr_1.3fr]">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-[1.2fr_1fr_1fr_1.3fr]">
           <div className="flex items-start gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-100 text-sm font-extrabold text-indigo-700">
               S
@@ -49,15 +49,15 @@ const Footer = () => {
               Get Contact
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-slate-700">
-              <li className="flex items-start gap-2">
+              <li className="flex items-start gap-2 leading-6">
                 <Phone className="mt-0.5 h-4 w-4 shrink-0" />
                 Phone: 7008352041
               </li>
-              <li className="flex items-start gap-2">
+              <li className="flex items-start gap-2 break-all leading-6">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0" />
                 E-mail: Stechrourkela@gmail.com
               </li>
-              <li className="flex items-start gap-2">
+              <li className="flex items-start gap-2 leading-6">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
                 Location: OAV15, Civiltownship Dis: Sundargarh, Odisha
               </li>
@@ -66,8 +66,8 @@ const Footer = () => {
         </div>
 
         <div className="mt-10 border-t border-slate-300 py-5 text-xs text-slate-600 sm:flex sm:items-center sm:justify-between">
-          <p>Copyright © 2036 DITRP INDIA. All Rights Reserved</p>
-          <div className="mt-3 flex gap-5 sm:mt-0">
+          <p>Copyright © 2026 DITRP INDIA. All Rights Reserved</p>
+          <div className="mt-3 flex flex-wrap gap-3 sm:mt-0 sm:gap-5">
             <p>Privacy policy</p>
             <p>Term and conditions</p>
             <p>Refund policy</p>

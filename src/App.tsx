@@ -13,7 +13,7 @@ const App = () => {
     <>
     <ScrollToTop />
     <ScrollToDown />
-    <div id='app-scroll-container' className='h-screen overflow-y-auto scrollbar bg-white text-slate-900'>
+    <div id='app-scroll-container' className='h-[100dvh] overflow-y-auto scrollbar bg-white text-slate-900'>
       <Header />
       <Hero />
       <Courses />

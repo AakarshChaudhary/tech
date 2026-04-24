@@ -29,21 +29,21 @@ const Header = () => {
 			transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
 			className='sticky top-0 z-50 border-b border-slate-200/70 bg-white/90 backdrop-blur backdrop-saturate-150'
 		>
-			<div className='mx-auto flex max-w-8xl items-center justify-between px-6 py-4'>
+			<div className='mx-auto flex max-w-8xl flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6 sm:py-4'>
 				<div className='flex items-center gap-3'>
-					<div className='flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-100 text-sm font-extrabold text-indigo-700'>
+					<div className='flex h-9 w-9 items-center justify-center rounded-xl bg-indigo-100 text-sm font-extrabold text-indigo-700 sm:h-10 sm:w-10'>
 						S
 					</div>
 
 					<div>
-						<p className='text-lg font-extrabold tracking-tight text-slate-900'>STECH</p>
-						<p className='-mt-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-slate-500'>
+						<p className='text-base font-extrabold tracking-tight text-slate-900 sm:text-lg'>STECH</p>
+						<p className='-mt-1 text-[9px] font-semibold uppercase tracking-[0.16em] text-slate-500 sm:text-[10px] sm:tracking-[0.2em]'>
 							Computer Education
 						</p>
 					</div>
 				</div>
 
-				<nav className='hidden items-center gap-8 text-sm font-semibold text-slate-700 lg:flex'>
+				<nav className='hidden items-center gap-6 text-sm font-semibold text-slate-700 lg:flex'>
 					{navItems.map((item) => (
 						<motion.a
 							key={item.href}
@@ -57,16 +57,29 @@ const Header = () => {
 					))}
 				</nav>
 
-				<div className='flex items-center gap-3'>
-					<button className='flex items-center justify-center gap-2 px-5 py-2 text-sm font-semibold text-slate-700 transition hover:text-slate-900'>
+				<div className='flex items-center gap-2 sm:gap-3'>
+					<button className='hidden items-center justify-center gap-2 px-5 py-2 text-sm font-semibold text-slate-700 transition hover:text-slate-900 sm:flex'>
 						<LogIn className='h-4 w-4' />
 						Login
 					</button>
-					<button className='rounded-xl bg-[#22123d] px-5 py-2 text-sm font-semibold text-white transition hover:bg-[#140a29]'>
+					<button className='rounded-xl bg-[#22123d] px-4 py-2 text-xs font-semibold text-white transition hover:bg-[#140a29] sm:px-5 sm:text-sm'>
 						Enroll Now
 					</button>
 				</div>
 			</div>
+
+			<nav className='flex gap-4 overflow-x-auto border-t border-slate-200/70 px-4 pb-3 pt-2 text-sm font-semibold text-slate-700 lg:hidden'>
+				{navItems.map((item) => (
+					<a
+						key={item.href}
+						href={item.href}
+						onClick={(e) => handleNavClick(e, item.href)}
+						className='whitespace-nowrap transition hover:text-slate-900'
+					>
+						{item.label}
+					</a>
+				))}
+			</nav>
 		</motion.header>
 	)
 }
