@@ -62,7 +62,7 @@ const Courses = () => {
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.45, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 3.5, delay: index * 0.2, ease: [0.22, 1, 0.36, 1] }}
               className="ui-card overflow-hidden p-2 sm:p-3"
             >
               <div className="ui-media relative">
