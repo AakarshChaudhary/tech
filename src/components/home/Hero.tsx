@@ -30,12 +30,9 @@ const Hero = () => {
           </p>
 
           <div className='mt-8 flex flex-wrap gap-4'>
-            <button className='rounded-xl bg-[#22123d] px-6 py-3 font-semibold text-white transition hover:bg-[#140a29]'>
+            <a href='#courses' className='rounded-xl bg-[#22123d] px-6 py-3 font-semibold text-white transition hover:bg-[#140a29]'>
               Explore Courses
-            </button>
-            <button className='rounded-xl border border-slate-300 bg-white px-6 py-3 font-semibold text-slate-700 transition hover:border-slate-400 hover:text-slate-900'>
-              Download Brochure
-            </button>
+            </a>
           </div>
         </div>
 
