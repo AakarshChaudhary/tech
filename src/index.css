@@ -31,3 +31,17 @@
 .animate-fade-in-up-delayed {
 	animation: fade-in-up 0.95s ease-out both;
 }
+
+.scrollbar {
+    scrollbar-width: thick;
+    scrollbar-color: black transparent;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}

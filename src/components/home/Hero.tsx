@@ -42,7 +42,7 @@ const Hero = () => {
         <div className='relative z-10 ml-10 animate-fade-in-up-delayed flex justify-center lg:justify-end'>
           <div className='relative overflow-hidden rounded-[32px]'>
             <img src={heroImg} alt='Student holding laptop' className='w-full max-w-[650px] object-cover' />
-            <div className='pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white/90 to-transparent' />
+            <div className='pointer-events-none absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-white to-transparent' />
           </div>
         </div>
       </div>
