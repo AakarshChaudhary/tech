@@ -62,7 +62,7 @@ const Header = () => {
 						<LogIn className='h-4 w-4' />
 						Login
 					</button>
-					<button className='rounded-xl bg-[#22123d] px-4 py-2 text-xs font-semibold text-white transition hover:bg-[#140a29] sm:px-5 sm:text-sm'>
+					<button className='ui-button-primary px-4 py-2 text-xs font-semibold sm:px-5 sm:text-sm'>
 						Enroll Now
 					</button>
 				</div>

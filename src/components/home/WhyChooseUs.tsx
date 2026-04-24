@@ -1,4 +1,5 @@
 import { BadgeCheck, Laptop2, Users } from 'lucide-react'
+import { motion } from 'motion/react'
 import SectionBadge from '../ui/SectionBadge'
 
 const items = [
@@ -21,7 +22,7 @@ const items = [
 
 const WhyChooseUs = () => {
   return (
-    <section id='why-choose-us' className='py-16 sm:py-20'>
+    <section id='why-choose-us' className='bg-[var(--surface-1)] py-16 sm:py-20'>
       <div className='mx-auto max-w-7xl px-4 sm:px-6'>
         <div className='mx-auto max-w-3xl text-center'>
           <SectionBadge>Why choose us</SectionBadge>
@@ -32,16 +33,23 @@ const WhyChooseUs = () => {
         </div>
 
         <div className='mt-10 grid gap-5 md:grid-cols-3'>
-          {items.map((item) => {
+          {items.map((item, index) => {
             const Icon = item.icon
             return (
-              <article key={item.title} className='rounded-2xl border border-slate-200 bg-white p-6 shadow-sm'>
-                <div className='inline-flex rounded-lg bg-violet-100 p-2 text-violet-700'>
+              <motion.article
+                key={item.title}
+                initial={{ opacity: 0, y: 14 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.42, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
+                className='ui-card p-6'
+              >
+                <div className='inline-flex rounded-xl bg-indigo-100 p-2 text-indigo-700'>
                   <Icon className='h-5 w-5' />
                 </div>
                 <h3 className='mt-4 text-xl font-semibold text-slate-900'>{item.title}</h3>
                 <p className='mt-2 text-slate-600'>{item.description}</p>
-              </article>
+              </motion.article>
             )
           })}
         </div>

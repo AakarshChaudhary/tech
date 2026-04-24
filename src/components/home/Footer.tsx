@@ -2,7 +2,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-slate-200 bg-[#f5f5f5] pt-12">
+    <footer className="border-t border-slate-200/80 bg-[var(--surface-1)] pt-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-[1.2fr_1fr_1fr_1.3fr]">
           <div className="flex items-start gap-3">
@@ -25,10 +25,10 @@ const Footer = () => {
               Useful Links
             </h3>
             <ul className="mt-4 space-y-2 text-sm text-slate-700">
-              <li>Study Materials</li>
-              <li>Certificates</li>
-              <li>Our Affiliations</li>
-              <li>Payment Details</li>
+              <li className="transition-colors hover:text-slate-900">Study Materials</li>
+              <li className="transition-colors hover:text-slate-900">Certificates</li>
+              <li className="transition-colors hover:text-slate-900">Our Affiliations</li>
+              <li className="transition-colors hover:text-slate-900">Payment Details</li>
             </ul>
           </div>
 
@@ -37,10 +37,10 @@ const Footer = () => {
               Our Company
             </h3>
             <ul className="mt-4 space-y-2 text-sm text-slate-700">
-              <li>Contact Us</li>
-              <li>Blog</li>
-              <li>Jobs</li>
-              <li>Franchise Details</li>
+              <li className="transition-colors hover:text-slate-900">Contact Us</li>
+              <li className="transition-colors hover:text-slate-900">Blog</li>
+              <li className="transition-colors hover:text-slate-900">Jobs</li>
+              <li className="transition-colors hover:text-slate-900">Franchise Details</li>
             </ul>
           </div>
 
@@ -65,7 +65,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-slate-300 py-5 text-xs text-slate-600 sm:flex sm:items-center sm:justify-between">
+        <div className="mt-10 border-t border-slate-300/80 py-5 text-xs text-slate-600 sm:flex sm:items-center sm:justify-between">
           <p>Copyright © 2026 DITRP INDIA. All Rights Reserved</p>
           <div className="mt-3 flex flex-wrap gap-3 sm:mt-0 sm:gap-5">
             <p>Privacy policy</p>
