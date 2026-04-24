@@ -11,7 +11,7 @@ const Footer = () => {
             </div>
 
             <div>
-              <p className="text-lg font-extrabold tracking-tight text-slate-900">
+              <p className="text-lg font-bold tracking-tight text-slate-900">
                 STECH
               </p>
               <p className="-mt-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-slate-500">
@@ -55,7 +55,11 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-2 break-all leading-6">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0" />
-                E-mail: Stechrourkela@gmail.com
+                <a
+                  href="mailto:Stechrourkela@gmail.com"
+                >
+                  Stechrourkela@gmail.com
+                </a>
               </li>
               <li className="flex items-start gap-2 leading-6">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0" />

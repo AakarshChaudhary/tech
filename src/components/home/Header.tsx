@@ -6,11 +6,13 @@ const navItems = [
 	{ label: 'Home', href: '#home' },
 	{ label: 'Courses', href: '#courses' },
 	{ label: 'About Us', href: '#about-us' },
-	{ label: 'Top Performers', href: '#top-performers' },
-	{ label: 'Gallery', href: '#gallery' },
-	{ label: 'Our Services', href: '#our-services' },
-	{ label: 'Verification', href: '#verification' },
-	{ label: 'Franchise Registration', href: '#franchise-registration' },
+	{ label: 'Why STECH?', href: '#why-stech' },
+	{ label: 'Our Teachers', href: '#our-teachers' },
+	// { label: 'Top Performers', href: '#top-performers' },
+	// { label: 'Gallery', href: '#gallery' },
+	// { label: 'Our Services', href: '#our-services' },
+	// { label: 'Verification', href: '#verification' },
+	// { label: 'Franchise Registration', href: '#franchise-registration' },
 ]
 
 const Header = () => {
@@ -36,7 +38,7 @@ const Header = () => {
 					</div>
 
 					<div>
-						<p className='text-base font-extrabold tracking-tight text-slate-900 sm:text-lg'>STECH</p>
+						<p className='text-base font-bold tracking-tight text-slate-900 sm:text-lg'>STECH</p>
 						<p className='-mt-1 text-[9px] font-semibold uppercase tracking-[0.16em] text-slate-500 sm:text-[10px] sm:tracking-[0.2em]'>
 							Computer Education
 						</p>
@@ -58,9 +60,9 @@ const Header = () => {
 				</nav>
 
 				<div className='flex items-center gap-2 sm:gap-3'>
-					<button className='hidden items-center justify-center gap-2 px-5 py-2 text-sm font-semibold text-slate-700 transition hover:text-slate-900 sm:flex'>
+					<button className='flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:text-slate-900'>
 						<LogIn className='h-4 w-4' />
-						Login
+						<span className='hidden sm:inline'>Login</span>
 					</button>
 					<button className='ui-button-primary px-4 py-2 text-xs font-semibold sm:px-5 sm:text-sm'>
 						Enroll Now

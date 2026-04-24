@@ -1,7 +1,7 @@
 import type { CSSProperties } from 'react'
 
 const About = () => {
-	const collageParallax = { '--parallax-speed': 0.01 } as CSSProperties
+	const collageParallax = { '--parallax-speed': 0.024 } as CSSProperties
 
   return (
     <section id='about-us' className='bg-[var(--surface-0)] py-16 sm:py-20'>

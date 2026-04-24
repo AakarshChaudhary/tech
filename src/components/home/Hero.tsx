@@ -1,12 +1,13 @@
 import type { CSSProperties } from 'react'
 import heroImg from '../../assets/hero.png'
+import RotatingText from '../ui/RotatingText'
 
 const Hero = () => {
-	const headingParallax = { '--parallax-speed': -0.01 } as CSSProperties
-	const imageParallax = { '--parallax-speed': 0.012 } as CSSProperties
+	const headingParallax = { '--parallax-speed': -0.30 } as CSSProperties
+	const imageParallax = { '--parallax-speed': 0.25 } as CSSProperties
 
   return (
-    <section className='relative flex min-h-[calc(100vh-72px)] items-center overflow-hidden sm:min-h-[calc(100vh-80px)]'>
+    <section id="home" className='relative flex min-h-[calc(100vh-72px)] items-center overflow-hidden sm:min-h-[calc(100vh-80px)]'>
       <div className="parallax-soft pointer-events-none absolute left-1/2 top-14 w-fit -translate-x-1/2 -translate-y-1/2 select-none font-serif text-[90px] font-bold leading-none tracking-[0.08em] text-[#dad9db] sm:top-40 sm:text-[150px] lg:text-[330px]" style={headingParallax} aria-hidden="true">
         <span className="relative block">
           STECH
@@ -17,8 +18,23 @@ const Hero = () => {
       <div className='relative mx-auto mt-20 grid w-full max-w-7xl gap-8 px-4 py-8 sm:mt-5 sm:gap-10 sm:px-6 sm:py-10 lg:grid-cols-[1fr_1.2fr] lg:items-center'>
         <div className='relative z-10 animate-fade-in-up '>
           <h1 className='flex flex-col gap-2 text-3xl font-semibold text-slate-900 sm:text-4xl lg:text-5xl'>
-            <span>
-              Build Your <span className='rounded-md bg-indigo-100 px-2'>Career</span>
+            <span className='flex flex-wrap items-center gap-2'>
+              Build Your
+              <RotatingText
+                texts={['Career', 'Future', 'Success']}
+                mainClassName='rounded-md bg-indigo-100 px-2 py-0.5 text-black overflow-hidden'
+                staggerFrom='last'
+                initial={{ y: '100%' }}
+                animate={{ y: 0 }}
+                exit={{ y: '-120%' }}
+                staggerDuration={0.055}
+                splitLevelClassName='overflow-hidden pb-0.5'
+                transition={{ type: 'spring', damping: 30, stiffness: 400 }}
+                rotationInterval={2000}
+                splitBy='characters'
+                auto
+                loop
+              />
             </span>
             <span>
               with Industry Ready

@@ -87,7 +87,7 @@
 	}
 
 	.parallax-soft {
-		translate: 0 calc(var(--scroll-y, 0px) * var(--parallax-speed, 0.014));
+		translate: 0 calc(var(--scroll-y, 0px) * var(--parallax-speed, 0.03));
 		will-change: translate;
 	}
 }
