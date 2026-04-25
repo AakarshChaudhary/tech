@@ -60,8 +60,11 @@ const Header = () => {
 				</nav>
 
 				<div className='flex items-center gap-2 sm:gap-3'>
-					<button className='flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:text-slate-900'>
-						<LogIn className='h-4 w-4' />
+					<button
+						aria-label='Login'
+						className='flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:text-slate-900'
+					>
+						<LogIn aria-hidden='true' className='h-4 w-4' />
 						<span className='hidden sm:inline'>Login</span>
 					</button>
 					<button className='ui-button-primary px-4 py-2 text-xs font-semibold sm:px-5 sm:text-sm'>

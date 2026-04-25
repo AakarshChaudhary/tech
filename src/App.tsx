@@ -38,18 +38,20 @@ const App = () => {
 
   return (
     <>
-    <ScrollToTop />
-    <ScrollToDown />
-    <WhatsappButton />
-    <div id='app-scroll-container' className='app-surface h-[100dvh] overflow-y-auto scrollbar text-slate-900'>
-      <Header />
-      <Hero />
-      <Courses />
-      <About />
-      <WhyChooseUs />
-      <OurTeachers />
-      <Footer />
-    </div>
+      <ScrollToTop />
+      <ScrollToDown />
+      <WhatsappButton />
+      <div id='app-scroll-container' className='app-surface h-[100dvh] overflow-y-auto scrollbar text-slate-900'>
+        <Header />
+        <main id='main-content'>
+          <Hero />
+          <Courses />
+          <About />
+          <WhyChooseUs />
+          <OurTeachers />
+          <Footer />
+        </main>
+      </div>
     </>
   )
 }

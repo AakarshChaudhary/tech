@@ -1,5 +1,5 @@
 import type { CSSProperties } from 'react'
-import heroImg from '../../assets/hero.png'
+import heroImg from '../../assets/hero.webp'
 import RotatingText from '../ui/RotatingText'
 
 const Hero = () => {
