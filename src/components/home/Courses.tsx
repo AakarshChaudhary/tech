@@ -43,7 +43,7 @@ const courseItems = [
 
 const Courses = () => {
   return (
-    <section id="courses" className="bg-[var(--surface-1)] py-16 sm:py-20">
+    <section id="courses" className="bg-[var(--surface-1)] py-32 sm:py-36">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="mx-auto mb-10 max-w-3xl text-center">
           <SectionBadge>Top popular courses</SectionBadge>

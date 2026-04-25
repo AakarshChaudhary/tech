@@ -24,7 +24,7 @@ const teacherItems = [
 
 const OurTeachers = () => {
   return (
-    <section id='our-teachers' className='bg-[var(--surface-0)] py-16 sm:py-20'>
+    <section id='our-teachers' className='bg-[var(--surface-0)] py-32 sm:py-36'>
       <div className='mx-auto max-w-7xl px-4 sm:px-6'>
         <div className='mx-auto max-w-3xl text-center'>
           <SectionBadge>Our teachers</SectionBadge>

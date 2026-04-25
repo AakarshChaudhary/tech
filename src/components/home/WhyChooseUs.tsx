@@ -22,7 +22,7 @@ const items = [
 
 const WhyChooseUs = () => {
   return (
-    <section id='why-stech' className='bg-[var(--surface-1)] py-16 sm:py-20'>
+    <section id='why-stech' className='bg-[var(--surface-1)] py-32 sm:py-36'>
       <div className='mx-auto max-w-7xl px-4 sm:px-6'>
         <div className='mx-auto max-w-3xl text-center'>
           <SectionBadge>Why choose us</SectionBadge>
